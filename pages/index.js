@@ -18,10 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {vWatched === false ? <div className="flex flex-1 w-max mx-auto my-12"><div className="text-sky-900 text-lg">Watch Stranger Things Season 4 trailer until the end</div><div className="my-auto text-sky-900 ml-2"><BsFillEmojiSmileFill size={30} /></div></div>
+      {vWatched === false ? <div className="flex flex-1 w-max mx-auto my-12"><div className="text-sky-900 text-lg">Watch Stranger Things S4 trailer until the end</div><div className="my-auto text-sky-900 ml-2"><BsFillEmojiSmileFill size={30} /></div></div>
         :
-        <div className="flex flex-1 w-max mx-auto my-12"><div className="text-sky-900 text-lg">Yay! you successfully watched the trailer</div><div className="my-auto text-sky-900 ml-2"><BsFillEmojiLaughingFill size={30} /></div></div>}
-      <video className="w-full" src="/st4t.mp4" onEnded={handleEnd} poster="/sts4th.jpg" controls></video>
+        <div className="flex flex-1 w-max mx-auto my-12"><div className="text-sky-900 text-lg">Yay! you did it!</div><div className="my-auto text-sky-900 ml-2"><BsFillEmojiLaughingFill size={30} /></div></div>}
+      <video className="mx-auto mb-14" src="/st4t.mp4" onEnded={handleEnd} poster="/sts4th.jpg" controls></video>
     </>
   )
 }
